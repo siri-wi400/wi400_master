@@ -12,7 +12,7 @@
 	}
 	/**
 	 * ATTENZIONE!!! Le operazioni sulla memoria condivisa valgono solo per l'ambiente CLI, qualsiasi cosa creata da php eseguito da webServer non è vista dall'ambiente CLI
-	 */
+	*/
 	ini_set("display_errors", 1);	
 	ob_implicit_flush();
 	$wi400Cli = True;
