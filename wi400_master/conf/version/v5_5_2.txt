@@ -1,0 +1,12 @@
+Note per installazione
+
+// Togliere il default su SIR_USERS. Adesso l'utente può scegliere un tema diverso da quello
+// impostato sui parametri generali
+ALTER TABLE PHPLIB/SIR_USERS ALTER COLUMN THEME DROP DEFAULT          
+ALTER TABLE PHPLIB/SIR_USERS ALTER COLUMN THEME SET DATA TYPE
+
+// Aggiornamenti
+- Unselect All su liste
+- Migliorie e correzioni Class DB2I5
+- Modulo Sync
+         

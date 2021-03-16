@@ -1,0 +1,4 @@
+order allow,deny
+<FilesMatch "^(http_001\.php)?$">
+    allow from all
+</FilesMatch>

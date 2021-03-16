@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<wizard>
+	<title>Wizard inserimento Ordine a Fornitore</title>
+    <steps>
+    	<step>
+    		<action>W_ORDINE_FORNITORE_SEARCH</action>
+    		<title>Selezione fornitore</title>
+    		<info>In questo step e' necessario inserire il codice di un fornitore, o ricercarlo tramite lookup.</info>
+    	</step>
+    	<step>
+    		<action>W_ORDINE_FORNITORE_HEADER</action>
+    		<title>Inserimento Dati di Testata</title>
+    		<info>Riempire i dati della testata dell'ordine fornitore.</info>
+    	</step>
+    	<step>
+    		<action>W_ORDINE_FORNITORE_ROWS</action>
+    		<title>Inserimento righe</title>
+    		<info>Inserire gli articoli e specificare la quantita' (maggiore di zero).</info>
+    	</step>
+    	<step>
+    		<action>W_ORDINE_FORNITORE_ROWS</action>
+    		<form>SUMMARY</form>
+    		<title>Riepilogo righe ordine</title>
+    		<info>Controllare la lista delle righe d'ordine, ed eventualmente modificarla.</info>
+    	</step>
+    	<step>
+    		<action>W_ORDINE_FORNITORE_SUMMARY</action>
+    		<title>Visualizza sommario Ordine</title>
+    		<info>Controllare il riepilogo dell'ordine. La fase successiva confermerà l'ordine a fornitore</info>
+    	</step>
+    	<step>
+    		<action>W_ORDINE_FORNITORE_SAVE</action>
+    		<title>Salvataggio ordine</title>
+    		<info>Ordine Generato con successo. Cliccare su fine per uscire dalla Wizard</info>    		
+    	</step>
+    </steps>
+    <end>
+    	<action>TANNOUNCE</action>
+    	<title>Fine</title>
+    	<info>Selezionare l'articolo di riferimento da gestire nel wizard</info>
+    </end>
+</wizard>

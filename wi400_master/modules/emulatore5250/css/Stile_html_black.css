@@ -1,0 +1,702 @@
+@CHARSET "ISO-8859-1";
+
+/*:root {
+  --text-color: #00e600;
+}*/
+
+input {
+	caret-color: transparent;
+}
+
+.display, .cont_block, .cont_block2, .cont_block_export {
+	position: relative;
+	font-family: monospace;
+	font-size-adjust: 0.4;
+	background: #f3f3f4;
+	color: black;
+	width: 700px;
+	height: 500px;
+	zoom: 1.3;
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.cont_error, .cont_cmd_line {
+	position: absolute;
+	bottom: 0px;
+	width: 700px;
+	background: #f3f3f4;
+	color: black;
+	border-top: 1px solid black;
+	font-family: monospace;
+}
+
+.cont_cmd_line {
+	height: 16px;
+	display: none;
+}
+
+.cont_block, .cont_block2 {
+	position: absolute;
+	top: 0px;
+	z-index: 9;
+	background: transparent;
+	display: none;
+}
+
+.cont_block_export {
+	position: absolute;
+	top: 0px;
+	z-index: 9;
+	background: rgba(0, 0, 0, 0.56);
+	display: none;
+}
+
+.cont_model_export {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	height: 70px;
+	margin-top: -35px;
+	margin-left: -125px;
+	background: white;
+	color: black;
+	padding: 15px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.cont_model_export span {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#x_system {
+	position: absolute;
+	left: 100px;
+	bottom: 20px;
+	color: white;
+	display: none;
+}
+
+#x_error {
+	position: absolute;
+	left: 200px;
+	bottom: 20px;
+	color: red;
+	display: none;	
+}
+
+.error {
+	padding: 0px 13px;
+	height: 16px;
+}
+
+#TEMA {
+	color: black;
+    border: 1px solid black;
+	background: white;
+    font-size: 15px;
+    top: 1px;
+    height: initial;
+    position: relative;
+	z-index: 0;
+}
+
+.display .component {
+	position: absolute;
+	font-weight: bolder;
+}
+
+.component.input {
+	z-index: 10;
+}
+
+.inputtext, .inputtextDisabled {
+	font-family: monospace;/*Courier New;*/
+	font-style: italic;
+/* 	font-size: 15px; */
+	color: black;
+    padding: 0px;
+	padding-bottom: 0px;
+    /*background: transparent;*//*!important;*/
+	outline: none;
+    border: transparent;
+	/*font-size: 13px;*/
+    /*border-bottom: 1px solid #00e600;*/
+	height: 11px;
+}
+
+.monocase {
+	text-transform: uppercase;
+}
+.nascosto {
+ 	display: none;
+}
+
+.display .inputtext::-ms-clear {
+    display: none;
+}
+
+#scollegato {
+	text-align: center;
+    padding-top: 70px;
+	/*background-color: red;*/
+}
+
+.f21 {
+	background: #00e600;
+	color: black;
+}
+.f22 {
+	/*color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+	color: black;
+}
+.f23 {
+	background: white;
+	color: black;
+}
+.f24 {
+	border-bottom: 1px solid #00e600;
+}
+.f25 {
+	background: #00e600;
+	color: black;
+	border-bottom: 1px solid #00e600;
+}
+.f26 {
+	color: black;
+	border-bottom: 1px solid black;
+}
+.f27 {
+	display: none;
+}
+.f28 {
+	color: red;
+}
+.f29 {
+	color: black;
+	background: red;
+}
+.f2A {
+	color: red;
+}
+.f2B {
+	color: black;
+	background: red;
+}
+.f2C {
+	color: red;
+	border-bottom: 1px solid red;
+}
+.f2D {
+	background: red;
+	color: black;
+	border-bottom: 1px solid red;
+}
+.f2E {
+	color: red;
+	border-bottom: 1px solid red;
+}
+.f2F {
+	/*background: blue;*/
+}
+.f30 {
+	color: #00fff5;
+    border-bottom: 2px dotted white;
+}
+.f31 {
+	background: #00fff5;
+	color: black;
+    border-bottom: 2px dotted white;
+}
+.f32 {
+	color: #ffff00;
+	border-bottom: 2px dotted white;
+}
+.f33 {
+	background: #ffff00;
+	color: black;
+	border-bottom: 2px dotted white;
+}
+.f34 {
+	color: #00fff5;
+    border-bottom: 1px solid #00fff5;
+}
+.f35 {
+	color: black;
+	background: #00fff5;
+	border-bottom: 1px solid #00fff5;
+}
+.f36 {
+	color: #ffff00;
+	border-bottom: 2px dotted white;
+}
+.f37 {
+	background: blue;
+}
+.f38 {
+	color: #da00ff;
+}
+.f39 {
+	color: black;
+	background: #da00ff;
+}
+.f3A {
+	color: #7890F0;
+}
+.f3B {
+	color: black;
+	background: #7890F0;
+}
+.f3C {
+	color: #FF00FF;
+}
+.f3D {
+	color: black;
+	background: #FF00FF;
+	border-bottom: 1px solid #FF00FF;
+}
+.f3E {
+	color: #7890F0;
+	border-bottom: 1px solid #7890F0;
+}
+.f3F {
+	/*background: blue;*/
+}
+
+/****************** INPUT TEXT *******************/
+.i21 input {
+	background-color: #00e600 !important;
+	color: black;
+}
+.i22 input {
+	color: white;
+}
+.i23 input {
+	background-color: white !important;
+	color: black;
+}
+.i24 input {
+	border-bottom: 1px solid black;
+}
+.i25 input {
+	background-color: #00e600 !important;
+	color: black;
+	border-bottom: 1px solid #00e600;
+}
+.i26 input {
+	color: white;
+	border-bottom: 1px solid white;
+}
+.i27 input {
+	background-color: transparent !important;
+	border-bottom: none;
+}
+.i28 input {
+	color: red;
+}
+.i29 input {
+	color: black;
+	background-color: red !important;
+}
+.i2A input {
+	color: red;
+}
+.i2B input {
+	color: black;
+	background-color: red !important;
+}
+.i2C input {
+	color: red;
+	border-bottom: 1px solid red;
+}
+.i2D input {
+	background-color: red !important;
+	color: black;
+	border-bottom: 1px solid red;
+}
+.i2E input {
+	color: red;
+	border-bottom: 1px solid red;
+}
+.i2F input {
+	/*background-color: blue !important;*/
+}
+.i30 input {
+	color: black;
+    border-bottom: 2px dotted black;
+}
+.i31 input {
+	background-color: #00fff5 !important;
+	color: black;
+    border-bottom: 2px dotted black;
+}
+.i32 input {
+	color: #ffff00;
+	border-bottom: 2px dotted white;
+}
+.i33 input {
+	background-color: #ffff00 !important;
+	color: black;
+	border-bottom: 2px dotted white;
+}
+.i34 input {
+	color: #00fff5;
+    border-bottom: 1px solid #00fff5;
+}
+.i35 input {
+	color: black;
+	background-color: #00fff5 !important;
+	border-bottom: 1px solid #00fff5;
+}
+.i36 input {
+	color: #ffff00;
+	border-bottom: 2px dotted white;
+}
+.i37 input {
+	background-color: blue !important;
+}
+.i38 input {
+	color: #da00ff;
+}
+.i39 input {
+	color: black;
+	background-color: #da00ff !important;
+}
+.i3A input {
+	color: #7890F0;
+}
+.i3B input {
+	color: black;
+	background-color: #7890F0 !important;
+}
+.i3C input {
+	color: #FF00FF;
+}
+.i3D input {
+	color: black;
+	background-color: #FF00FF !important;
+	border-bottom: 1px solid #FF00FF;
+}
+.i3E input {
+	color: #7890F0;
+	border-bottom: 1px solid #7890F0;
+}
+.i3F input {
+	display: none;
+}
+
+/****************** CON FOCUS ***********************/
+.focus20 input:focus {
+	color: #00e600;
+	background-color: black !important;
+	border-bottom: 0px;
+}
+.focus21 input:focus {
+	color: black;
+	background-color: #00e600 !important;
+	border-bottom: 0px;
+}
+.focus22 input:focus {
+	color: white;
+	background-color: black !important;
+	border-bottom: 0px;
+}
+.focus23 input:focus {
+	color: black;
+	background-color: white !important;
+	border-bottom: 0px;
+}
+.focus24 input:focus {
+	color: #00e600;
+	background-color: black !important;
+	border-bottom: 1px solid #00e600;
+}
+.focus25 input:focus {
+	color: black;
+	background-color: #00e600 !important;
+	border-bottom: 1px solid #00e600;
+}
+.focus26 input:focus {
+	color: white;
+	background-color: black !important;
+	border-bottom: 1px solid white;
+}
+/*.focus27 input:focus {
+	border-bottom: none;
+}*/
+.focus28 input:focus {
+	color: black;
+	background-color: initial !important;
+	border-bottom: 0px;
+}
+.focus29 input:focus {
+	color: black;
+	background-color: red !important;
+	border-bottom: 0px;
+}
+.focus2A input:focus {
+	color: red;
+	background-color: black !important;
+	border-bottom: 0px;
+}
+.focus2B input:focus {
+	color: black;
+	background-color: red !important;
+	border-bottom: 0px;
+}
+.focus2C input:focus {
+	color: red;
+	background-color: black !important;
+	border-bottom: 1px solid red;
+}
+.focus2D input:focus {
+	color: black;
+	background-color: red !important;
+	border-bottom: 1px solid red;
+}
+.focus2E input:focus {
+	color: red;
+	background-color: black !important;
+	border-bottom: 1px solid red;
+}
+.focus2F input:focus {
+	/*background-color: blue !important;*/
+}
+.focus30 input:focus {
+	color: #00fff5;
+	background-color: black !important;
+    border-bottom: 2px dotted white;
+}
+.focus31 input:focus {
+	color: #00fff5;
+	background-color: black !important;
+    border-bottom: 2px dotted white;
+}
+.focus32 input:focus {
+	color: #ffff00;
+	background-color: black !important;
+	border-bottom: 2px dotted white;
+}
+.focus33 input:focus {
+	color: black;
+	background-color: #ffff00 !important;
+	border-bottom: 2px dotted white;
+}
+.focus34 input:focus {
+	color: #00fff5;
+	background-color: black !important;
+    border-bottom: 1px solid #00fff5;
+}
+.focus35 input:focus {
+	color: black;
+	background-color: #00fff5 !important;
+	border-bottom: 1px solid #00fff5;
+}
+.focus36 input:focus {
+	color: #ffff00;
+	background-color: black !important;
+	border-bottom: 2px dotted white;
+}
+/*.focus37 input:focus {
+	background-color: blue !important;
+}*/
+.focus38 input:focus {
+	color: #da00ff;
+	background-color: black !important;
+	border-bottom: 0px;
+}
+.focus39 input:focus {
+	color: black;
+	background-color: #da00ff !important;
+	border-bottom: 0px;
+}
+.focus3A input:focus {
+	color: #7890F0;
+	background-color: black !important;
+	border-bottom: 0px;
+}
+.focus3B input:focus {
+	color: black;
+	background-color: #7890F0 !important;
+	border-bottom: 0px;
+}
+.focus3C input:focus {
+	color: #FF00FF;
+	background-color: black !important;
+	border-bottom: 0px;
+}
+.focus3D input:focus {
+	color: black;
+	background-color: #FF00FF !important;
+	border-bottom: 1px solid #FF00FF;
+}
+.focus3E input:focus {
+	color: #7890F0;
+	background-color: black !important;
+	border-bottom: 1px solid #7890F0;
+}
+.focus3F input:focus {
+	display: none;
+}
+
+.cols132 {
+	font-size: 9.5px;
+	font-size-adjust: 0.4;
+}
+
+.display .cols132 .inputtext{
+	font-size: 9.5px;
+	font-size-adjust: 0.4;
+}
+
+
+
+/**** INIZIO GESTIONE RADIO BUTTON ***/
+.container {
+    /*display: block;*/
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    height: 6px;
+    width: 6px;
+    /*background-color: black;*/
+    border: 1.5px solid #00e600;
+    border-radius: 50%;
+}
+
+.label-radio {
+	position: relative;
+	top: 2px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 1.5px;
+	left: 1.4px;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background: #00e600;
+}
+/**** FINE ******************************/
+
+
+/******** GESTIONE BOTTONI *********************/
+.display .detail-button {
+	font-family: monospace;
+	background-color: black;
+	border: 1px solid #7890F0;
+	color: #00e600;
+	font-weight: normal;
+	font-size: 13px;
+	margin: 0px;
+}
+
+.display .detail-button:focus, .display .detail-button:hover {
+	background-color: #00e600 !important;
+	color: black;
+}
+
+/************** FINE ******************/
+
+/******** GESTIONE MENU' SELECT *********************/
+.display .select {
+	font-family: monospace;
+	background-color: black;
+	border: 0px;
+	color: #00e600;
+	font-weight: normal;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+}
+.display .select:first-letter {
+	/*border-bottom: 1px solid #00e600;*/
+	text-decoration: underline;
+}
+
+.display .select:focus, .display .select:hover {
+	background-color: #00e600 !important;
+	color: black;
+	/*border-color: 1px solid black;*/
+}
+
+/*.display .select:focus:first-letter, .display .select:hover:first-letter {
+	border-color: black;
+}*/
+
+
+
+/************** FINE ******************/
+
+.window {
+	background-color: black;
+	border: 1px solid #7890F0;
+	border-right: 3px double #7890F0;
+    border-bottom: 3px double #7890F0;
+	z-index: 11;
+}
+
+.blocco_window {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: gray;
+	opacity: 0.3;
+	z-index: 11;
+}
+
+.debug {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.cmd_line {
+	left: 9px;
+	bottom: 2px;
+}
+
+#input_system_line {
+	/*display: none;*/
+}

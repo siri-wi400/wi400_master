@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<wizard>
+	<title>Wizard inserimento Articolo standard</title>
+    <steps>
+    	<step>
+    		<action>TARTICOLI</action>
+    		<title>Selezione articolo</title>
+    		<info>Selezionare l'articolo di riferimento da gestire nel wizard</info>
+    	</step>
+    	<step>
+    		<action>TARTICOLI</action>
+    		<form>DETAIL</form>
+    		<title>Dettaglio articolo</title>
+    		<info>Completare eventuali informazioni richieste</info>
+    	</step>
+    	<step>
+    		<action>INFO_ARTICOLO_DEPOSITO</action>
+    		<form>DETAIL</form>
+    		<gateway>ITEM_DETAIL</gateway>
+    		<title>Articoli deposito</title>
+    		<info>Varie informazioni</info>
+    	</step>
+    </steps>
+    <end>
+    	<action>TO_LST</action>
+    	<title>Fine</title>
+    	<info>Selezionare l'articolo di riferimento da gestire nel wizard</info>
+    </end>
+</wizard>

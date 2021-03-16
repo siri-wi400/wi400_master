@@ -1,0 +1,26 @@
+#Require all denied
+<FilesMatch "^(index\.php)?$">
+    Require all granted
+</FilesMatch>
+<FilesMatch "^(batch\.php)?$">
+    Require all granted
+</FilesMatch>
+<FilesMatch "^(cli\.php)?$">
+    Require all granted
+</FilesMatch>
+<FilesMatch "^(combine\.php)?$">
+    Require all granted
+</FilesMatch>
+<FilesMatch "^(rest\.php)?$">
+    Require all granted
+</FilesMatch>
+<FilesMatch "^(preload\.php)?$">
+    Require all granted
+</FilesMatch>
+<FilesMatch "^(loadIframe\.php)?$">
+    Require all granted
+</FilesMatch>
+<FilesMatch "\.(css|js|html|jpg|gif|png|woff|woff2|ttf|map|ico|eot)$">
+	Require all granted
+</FilesMatch>
+RewriteRule api/v1/(.*)$ rest.php?version=1&reqrest=$1 [QSA,NC,L]

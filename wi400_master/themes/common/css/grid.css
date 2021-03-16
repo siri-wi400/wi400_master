@@ -1,0 +1,254 @@
+
+/*
+**  Stili personalizzati liste
+*/
+
+.wi400_grid_gray_strong {
+	background-color: #DDDDDD;
+	font-weight: bold;
+}
+
+.wi400_grid_gray_border {
+	background-color: #DDDDDD;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+
+.wi400_grid_big {
+	font-size: 12px;
+}
+
+.wi400_grid_very_big {
+	font-size: 13px;
+}
+
+.wi400_grid_very_big_strong {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.wi400_grid_red {
+	background-color: #ff9c9c;
+}
+.wi400_grid_red_2 {
+	background-color: #ff9c9c;
+}
+.wi400_grid_red_2:hover {
+	background-color: #ff9c9c;
+	opacity: 0.4;
+}
+.wi400_grid_eror_red {
+	background-color: #ff9c9c;
+}
+.wi400_grid_red_border {
+	background-color: #ff9c9c;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_red_strong {
+	background-color: #ff9c9c;
+	font-weight: bold;
+}
+.wi400_grid_dark_red {
+	background-color: #E75480;
+}
+.wi400_grid_dark_red_border {
+	background-color: #E75480;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_hidden {
+	visibility: hidden;
+}
+.wi400_grid_orange {
+	background-color: #fde5ab;
+}
+.wi400_grid_orange_border {
+	background-color: #fde5ab;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_white_border {
+	background-color: white;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_black {
+	background-color: black;
+}
+.wi400_grid_black_border {
+	background-color: black;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_copy {
+	background-image: url(../themes/common/images/copy.png);
+	background-repeat: no-repeat;
+	 background-position: right; 
+}
+.wi400_grid_new {
+	background-image: url(../themes/common/images/new_message.png);
+	background-repeat: no-repeat;
+	 background-position: right; 
+}
+.wi400_grid_green {
+	background-color: #b4dcb4;
+}
+.wi400_padleft_10 {
+	padding-left: 10px;
+}
+.wi400_padleft_20 {
+	padding-left: 20px;
+}
+.wi400_padleft_30 {
+	padding-left: 30px;
+}
+.wi400_padleft_40 {
+	padding-left: 40px;
+}
+.wi400_grid_green_border {
+	background-color: #b4dcb4;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_yellow {
+	background-color: #FFFF66;
+}
+.wi400_grid_yellow_border {
+	background-color: #FFFF66;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_blue {
+	background-color: #9999FF;
+}
+.wi400_grid_blue_border {
+	background-color: #9999FF;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_gray {
+	background-color: #d4e2d1;
+}
+
+.wi400_grid_light_blue {
+	background-color: #ABCDEF;
+}
+.wi400_grid_light_blue_border {
+	background-color: #ABCDEF;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_turquoise {
+	background-color: #40e0d0;
+}
+.wi400_grid_turquoise_border {
+	background-color: #40e0d0;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_aqua {
+	background-color: #7FFFD4;
+}
+.wi400_grid_aqua_border {
+	background-color: #7FFFD4;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_violet {
+	background-color: #DABAD0;
+}
+.wi400_grid_violet_border {
+	background-color: #CC66FF;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_pink {
+	background-color: #FFF0F5;
+}
+.wi400_grid_pink_border {
+	background-color: #FFCCFF;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+.wi400_grid_lilac {
+	background-color: #D8BFD8;
+}
+.wi400_grid_lilac_border {
+	background-color: #D8BFD8;
+    border-style:double;
+	border-width:medium;
+ 	border-color:black;
+}
+
+.wi400_green_border {
+	border: 2px solid green;
+	border-radius: 3px;
+}
+
+.wi400_red_border {
+	border: 2px solid red;
+	border-radius: 3px;
+}
+
+.wi400_orange_border {
+	border: 2px solid #ffa500;
+	border-radius: 3px;
+}
+
+.wi400_font_bold {
+	font-weight: bold;
+}
+
+.wi400_font_gray {
+	color: #DDDDDD;	
+}
+
+.wi400_font_red {
+	color: #FF0000;	
+}
+
+a.Bold, 
+a.Bold:visited, 
+a.Bold:active, 
+a.Bold:hover {
+	font-weight: bold;
+}
+
+a.redBold, 
+a.redBold:visited, 
+a.redBold:active, 
+a.redBold:hover {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.wi400_font_green {
+	color: #008000;	
+}
+
+.wi400_font_blue {
+	color: #0000FF;	
+}
+
+.wi400_font_turquoise {
+	color: #40e0d0;	
+}
+
+.wi400_font_orange {
+	color: #ffa500;	
+}

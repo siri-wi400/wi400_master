@@ -1,0 +1,48 @@
+[PCOMM SCRIPT HEADER]
+LANGUAGE=VBSCRIPT
+DESCRIPTION=
+[PCOMM SCRIPT SOURCE]
+OPTION EXPLICIT
+autECLSession.SetConnectionByName(ThisSessionName)
+
+REM This line calls the macro subroutine
+subSub1_
+
+sub subSub1_()
+   
+   autECLSession.autECLOIA.WaitForInputReady
+   autECLSession.autECLPS.SendKeys "##USER##"
+   autECLSession.autECLOIA.WaitForInputReady
+   autECLSession.autECLPS.SendKeys "[tab]"
+   autECLSession.autECLOIA.WaitForInputReady
+   autECLSession.autECLPS.SendKeys "##PASSWORD##"
+   autECLSession.autECLOIA.WaitForInputReady
+   autECLSession.autECLPS.SendKeys "[tab]"
+   autECLSession.autECLOIA.WaitForInputReady
+   autECLSession.autECLPS.SendKeys "zgetidc"
+   autECLSession.autECLOIA.WaitForInputReady
+   autECLSession.autECLPS.SendKeys "[enter]"
+ 
+   autECLSession.autECLPS.SendKeys "[enter]"
+
+   autECLSession.autECLOIA.WaitForInputReady
+   autECLSession.autECLPS.SendKeys "[reset]"
+
+   autECLSession.autECLPS.WaitForAttrib 12,28,"00","3c",3,10000
+
+   autECLSession.autECLPS.WaitForCursor 12,29,10000
+
+   autECLSession.autECLOIA.WaitForAppAvailable
+   
+   autECLSession.autECLOIA.WaitForInputReady
+   autECLSession.autECLPS.SendKeys "##ID##"
+
+   autECLSession.autECLOIA.WaitForAppAvailable
+
+   autECLSession.autECLOIA.WaitForInputReady
+
+   autECLSession.autECLWinMetrics.Active = True
+
+   ##SCRIPT##
+   
+end sub

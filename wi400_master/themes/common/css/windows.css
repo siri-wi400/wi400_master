@@ -1,0 +1,72 @@
+/* screen */
+div#eScreen {
+	background: url('screenBG.gif') repeat;
+}
+/* dialog window */
+table.dialogWindow {
+	background-color: white;
+	border-collapse: collapse;
+}
+/* dialog window header */
+.dialogWindow th {
+	background-color: silver;
+	padding: 4px;
+	border-collapse: collapse;
+	border: 0;
+	cursor: move;
+}
+/* dialog window header icon */
+.dialogWindow th img {
+	cursor: pointer;
+	margin: 3px 3px 0 0;
+}
+
+/* dialog window body */
+.dialogWindow td {
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+}
+/* dialog window iframe */
+.dialogWindow iframe {
+	border: 0;
+	margin:0;
+}		
+/* screen */
+div#eScreen {
+	background: url("themes/common/images/screenBG.gif") repeat;
+}
+
+/* dialog window */
+table.dialogWindow {
+	background-color: white;
+	border-collapse: collapse;
+	border:1px solid #cccccc;
+}
+
+/* dialog window header */
+.dialogWindow th {
+	background-color: #edeef0;
+	padding-left: 5px;
+	border: 0;
+	cursor: move;
+}
+
+/* dialog window header icon */
+.dialogWindow th img {
+	cursor: pointer;
+	margin: 3px 3px 0 0;
+}
+
+/* dialog window body */
+.dialogWindow td {
+	border-collapse: collapse;
+	padding: 4;
+	background-color: #edeef0;
+}
+
+/* dialog window iframe */
+.dialogWindow iframe {
+	border: 1px solid #cccccc;
+	margin:0;
+}		

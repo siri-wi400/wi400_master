@@ -1,0 +1,21 @@
+Download Source
+https://github.com/firephp/firephp-core
+
+Download estensioni
+firefox (firephp): https://addons.mozilla.org/en-US/firefox/addon/firephp/
+chrome (Webug): https://chrome.google.com/webstore/detail/webug/cjbeipenlpoeifpkjhgakejmikdhlhcj?utm_source=chrome-app-launcher-info-dialog 
+
+Documentazione
+https://code.google.com/archive/p/firephp/
+http://www.firephp.org/ 
+
+Installazione
+1) aggiungere il modulo firephp e includele la classe lib/FirePHPCore/FirePHP.class.php (loader.php a riga 46)
+2) istanziare la classe => $firephp = FirePHP::getInstance(true); (loader.php riga 47)
+
+Uso
+1) $firephp->fb("prova"); $firephp->fb($array);
+2) per altre functioni guardare gli esempi dentro la cartella "examples"
+
+Visualizzazione
+Aprire la finestra di sviluppo con F12 e guardare la console

@@ -1,0 +1,26 @@
+</td>
+</tr>
+<?
+	if (sizeof($buttonsBar) > 0){
+?>
+<tr height="5"><td style="border-top:1px solid #CCCCCC;background-color: #e0e0e0"><table width="100%"><tr><td>
+<?
+		foreach($buttonsBar as $button) {
+			$button->dispose(true);
+		}
+?>
+</td></tr></table></td></tr>
+<?
+	} 
+?>
+</table>
+<?
+	$menuContext->dispose();
+	require $base_path."/includes/messagesList.php";
+?>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

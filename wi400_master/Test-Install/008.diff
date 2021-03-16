@@ -1,0 +1,4 @@
+001+ Warning: require_once(/www/zendsvr/htdocs/WI400_LZOVI/function_test.php): failed to open stream: No such file or directory in /www/zendsvr/htdocs/WI400_LZOVI/Test-Install/008.php on line 2
+001- OK
+002+ 
+003+ Fatal error: require_once(): Failed opening required '/www/zendsvr/htdocs/WI400_LZOVI/function_test.php' (include_path='.:/usr/local/zendphp7/var/libraries/Zend_Framework_1/default/library:/usr/local/zendphp7/share/pear:/usr/local/zendphp7/var/libraries/PHP_Toolkit_for_IBMI_i/default/library:/usr/local/zendphp7/share/ToolkitApi') in /www/zendsvr/htdocs/WI400_LZOVI/Test-Install/008.php on line 2

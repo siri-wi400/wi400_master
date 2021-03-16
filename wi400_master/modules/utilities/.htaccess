@@ -1,0 +1,4 @@
+order allow,deny
+<FilesMatch "^(getProgressBar\.php)?$">
+    allow from all
+</FilesMatch>

@@ -1,0 +1,143 @@
+<?php
+class wi400Session {
+
+	public static $_TYPE_SUBFILE = "subfile";
+	public static $_TYPE_DETAIL  = "detail"; // non attivo
+	public static $_TYPE_LIST = "list"; // non attivo
+	public static $_TYPE_TREE = "tree"; 
+	
+	private static function getFileName($type, $id){
+		// Nome file sessione
+		return wi400File::getSessionFile(session_id(), $id."." . $type);
+	}
+	
+	public static function exist($type, $id){
+		$sessionFile = wi400Session::getFileName($type, $id);
+		if (!apc_fetch($sessionFile)){
+		//if (apc_exists($sessionFile)) {
+		    //echo "<br>Non esiste:".$sessionFile;
+			return false;
+		}else{
+			//echo "<br>Esiste:".$sessionFile;
+			return true;
+		}
+	}
+	
+	public static function loadFile($session_id, $filename){
+		
+		$sessionFile = wi400File::getSessionFile($session_id, $filename);
+		if (!file_exists($sessionFile)){
+			return false;
+		}else{
+	       	//$handle = fopen($sessionFile, "r");
+			//$contents = fread($handle, filesize($sessionFile));
+			//fclose($handle);
+			return apc_fetch($sessionFile);
+			//return unserialize($contents);
+			//echo unserialize(base64_decode($contents));
+		}
+	}
+	
+	public static function load($type, $id){
+
+		$sessionFile = wi400Session::getFileName($type, $id);
+		if (!file_exists($sessionFile)) {
+			return false;
+		}
+		//$handle = fopen($sessionFile, "r");
+		//$contents = fread($handle, filesize($sessionFile));
+
+		//fclose($handle);
+		//$serializable = unserialize($contents);
+		//return $serializable->getSubject();
+		return apc_fetch($sessionFile);
+		//return unserialize($contents);
+	}
+	
+	public static function delete($type, $id){
+		unlink(wi400Session::getFileName($type, $id));
+		apc_delete(wi400Session::getFileName($type, $id));
+	}
+	
+	public static function destroy(){
+		wi400File::deleteSessionFiles(session_id());
+	}
+	
+	public static function save($type, $id, $object){
+
+		$sessionFile = wi400Session::getFileName($type, $id);
+
+		$handle = fopen($sessionFile, "w");
+
+		if (flock($handle, LOCK_EX)){
+			if ($type=="list") {
+				include_once("/www/zendcore/htdocs/WI400_LZOVI/routine/classi/wi400List.cls.php");
+			}
+	    	$contents = serialize($object);
+	    	//$serializable = new SerializableContainer($object);
+            //$contents = serialize($serializable);
+		    fputs($handle, $contents);
+    		flock($handle, LOCK_UN);
+		    fclose($handle);
+		    apc_store($sessionFile, $object, 14400);
+		} else {
+	        fclose($handle);
+	        return false;
+	    }
+		
+	}
+	public static function serialize_fix_callback($match) {
+ 
+    return 's:' . strlen($match[2]); 
+} 
+	
+	
+}
+class SerializableContainer {
+  protected $subject;
+  protected $serialized;
+  protected $class_paths = array();
+
+  function __construct($subject) {
+    $this->subject = $subject;
+  }
+
+  function getSubject() {
+    if($this->serialized) {
+      $this->_includeFiles();
+      $this->subject = unserialize($this->serialized);
+      unset($this->serialized);
+    }
+    return $this->subject;
+  }
+
+  function __sleep() {
+    $this->serialized = serialize($this->subject);
+    $this->_fillClassPathInfo($this->serialized);
+    return array('serialized', 'class_paths');
+  }
+
+  function _includeFiles() {
+    foreach($this->class_paths as $path)
+      require_once($path);
+  }
+
+  function _fillClassPathInfo($serialized) {
+    $classes = $this->_extractSerializedClasses($serialized);
+    $this->class_paths = array();
+
+    foreach($classes as $class) {
+      $reflect = new ReflectionClass($class);
+      $this->class_paths[] = $reflect->getFileName();
+    }
+  }
+
+  function _extractSerializedClasses($str) {
+	if(preg_match_all('~(\||;)O:\d+:"([^"]+)":\d+:\{~', $str, $m))
+    //if(preg_match_all('~([||;]O|^O):d+:"([^"]+)":d+:{~', $str, $m))
+      return array_unique($m[2]);
+    else
+      return array();
+  }
+}
+

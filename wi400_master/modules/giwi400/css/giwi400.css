@@ -1,0 +1,173 @@
+@CHARSET "ISO-8859-1";
+
+.inputtextDisabled {
+    background-color: #e5e5e500;
+	border: none;
+}
+
+.contGiwi400 {
+	width: 100%;
+	/*background: red;*/
+}
+
+#GIWI400_TITOLO_slider #tableWidth {
+	border: 1px solid #85b78a;	
+}
+
+#GIWI400_TITOLO_slider .detail-label-cell{
+	background: #98ffa4;
+	/*border-top: 1px solid #85b78a;*/
+}
+
+#GIWI400_TITOLO_slider .detail-value-cell {
+	/*border-top: 1px solid #85b78a;*/
+}
+
+.BLU {
+	background-color: blue;
+}
+
+.GREEN {
+	background-color: green;
+} 
+.PINK {
+	background-color: pink;
+} 
+.RED {
+	background-color: red;
+} 
+.TOURQUESE {
+	background-color: #40E0D0;
+} 
+.WHITE {
+	background-color: white;
+} 
+.YELLOW {
+	background-color: yellow;
+}
+
+/* INPUT ESADECIMALE */
+input.i21 {
+	background-color: #00e600 !important;
+	color: black;
+}
+input.i22 {
+	color: white;
+}
+input.i23 {
+	background-color: white !important;
+	color: black;
+}
+input.i24 {
+	/*border-bottom: 1px solid black;*/
+}
+input.i25 {
+	background-color: #00e600 !important;
+	color: black;
+	/*border-bottom: 1px solid #00e600;*/
+}
+input.i26 {
+	color: white;
+	/*border-bottom: 1px solid white;*/
+}
+input.i27 {
+	background-color: transparent !important;
+	/*border-bottom: none;*/
+}
+input.i28 {
+	color: red;
+}
+input.i29 {
+	color: black;
+	background-color: red !important;
+}
+input.i2A {
+	color: red;
+}
+input.i2B {
+	color: black;
+	background-color: red !important;
+}
+input.i2C {
+	color: red;
+	/*border-bottom: 1px solid red;*/
+}
+input.i2D {
+	background-color: red !important;
+	color: black;
+	/*border-bottom: 1px solid red;*/
+}
+input.i2E {
+	color: red;
+	/*border-bottom: 1px solid red;*/
+}
+input.i2F {
+	/*background-color: blue !important;*/
+}
+input.i30 {
+	color: black;
+    /*border-bottom: 2px dotted black;*/
+}
+input.i31 {
+	background-color: #00fff5 !important;
+	color: black;
+    /*border-bottom: 2px dotted black;*/
+}
+input.i32 {
+	color: #ffff00;
+	/*border-bottom: 2px dotted white;*/
+}
+input.i33 {
+	background-color: #ffff00 !important;
+	color: black;
+	/*border-bottom: 2px dotted white;*/
+}
+/* FIX Per cambiare defualt colore*/
+input.i34 {
+	color: #000080;
+    /*border-bottom: 1px solid #00fff5;*/
+}
+input.i35 {
+	color: black;
+	background-color: #00fff5 !important;
+	/*border-bottom: 1px solid #00fff5;*/
+}
+input.i36 {
+	color: #ffff00;
+	/*border-bottom: 2px dotted white;*/
+}
+input.i37 {
+	background-color: blue !important;
+}
+input.i38 {
+	color: #da00ff;
+}
+input.i39 {
+	color: black;
+	background-color: #da00ff !important;
+}
+input.i3A {
+	color: #7890F0;
+}
+input.i3B {
+	color: black;
+	background-color: #7890F0 !important;
+}
+input.i3C {
+	color: #FF00FF;
+}
+input.i3D {
+	color: black;
+	background-color: #FF00FF !important;
+	/*border-bottom: 1px solid #FF00FF;*/
+}
+input.i3E {
+	color: #7890F0;
+	/*border-bottom: 1px solid #7890F0;*/
+}
+input.i3F {
+	display: none;
+}
+
+
+/* FINE INPUT ESADECIMALE */

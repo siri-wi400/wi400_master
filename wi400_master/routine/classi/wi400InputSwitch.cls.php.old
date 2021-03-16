@@ -1,0 +1,124 @@
+<?php
+
+/**
+ * @name wi400InputSwitch 
+ * @desc Classe per la creazione di uno switch button
+ * @copyright S.I.R.I. Informatica s.r.l.
+ * @author 
+ * @version 1.00 06/06/2011
+ * @link www.siri.informatica.it
+ * @info info@siri-informatica.it
+ */
+
+require_once $routine_path.'/classi/wi400InputCheckBox.cls.php';
+
+class wi400InputSwitch extends wi400InputCheckbox {
+
+	private $onLabel;
+	private $offLabel;
+	
+	public function setOnLabel($onLabel){
+    	$this->onLabel = $onLabel;
+    }
+    
+    public function getOnLabel(){
+    	return $this->onLabel;
+    } 
+    
+    public function setOffLabel($offLabel){
+    	$this->offLabel = $offLabel;
+    }
+    
+    public function getOffLabel(){
+    	return $this->offLabel;
+    } 
+	
+	/**
+	 * Costruttore della classe
+	 *
+	 * @param string $id	: ID del checkbox da creare
+	 */
+    public function __construct($id){
+    	global $jsArray;
+    	$this->setId($id);
+    	$this->setType("CHECKBOX");
+    	$this->onLabel = "ON";
+    	$this->offLabel = "OFF";
+    	$jsArray[] = "base/js/wi400-switch.js";
+    }
+    
+	/**
+     * Visualizzazione del checkbox
+     *
+     */
+    public function getHtml(){
+    	
+    	$outHtml = "";
+    	
+    	$checkedString = "";
+    	if ($this->getChecked()){
+    		$checkedString = "checked";
+    	}
+    	
+    	$onClick = array();
+    	
+    	if ($this->getOnClick() != ""){
+    		$onClick[] = $this->getOnClick();
+    	}
+    	
+
+        if ($this->getCheckUpdate()){
+    		$onClick[] = "setUpdateStatus('ON')";
+    	}
+    	
+    	if ($this->getIdList() != ""){
+    		$onClick[] = "checkGridRow('".$this->getIdList()."',".$this->getRowNumber().",true)";
+    	}
+    	
+    	if ($this->getName() == ""){
+    		$this->setName($this->getId());
+    	}
+    	
+    	// ONCLICK
+    	$onClickFunction = "";
+    	if (sizeof($onClick) > 0){
+	    	$onClickFunction = join(";", $onClick);
+    	}
+    	
+        // Mi trovo all'interno di un dettaglio	
+    	if ($this->getIdDetail()!="") {
+    		$outHtml = $outHtml."<td width='100%'>";  	
+    	}
+    	 
+    	$outHtml = $outHtml.'<input style="visibility:hidden;" value="'.$this->getValue().'" type="checkbox" '.$checkedString.' name="'.$this->getName().'" id="'.$this->getId().'" />';
+		$outHtml = $outHtml.'<script>';
+		
+		$tab = $this->getIdTab();
+		$numtab = substr($tab, -1);
+		$tabActive="";
+		if (isset($_REQUEST[$this->getIdDetail()."_ACTIVE_TAB"]) && $_REQUEST[$this->getIdDetail()."_ACTIVE_TAB"] != ""){
+			$tabActive = $_REQUEST[$this->getIdDetail()."_ACTIVE_TAB"];
+		}
+		$id = $this->getIdDetail()."_wi400Tab_".$tab;
+		if (is_numeric($numtab) && $numtab !=1 && $tab!=$tabActive) { 
+			if ($this->getIdDetail()!="") { $outHtml = $outHtml.'$("'.$id.'").observe("click", function() {'; }
+			$outHtml = $outHtml.'new iPhoneStyle($("'.$this->getId().'"), { checkedLabel: "'.$this->onLabel.'", uncheckedLabel: "'.$this->offLabel.'", statusChange: function(e){'.$onClickFunction.'}});';
+			if ($this->getIdDetail()!="") { $outHtml = $outHtml.'});'; }
+		} else {
+			if ($this->getIdDetail()!="") { $outHtml = $outHtml.'document.observe("dom:loaded", function() {'; }
+			$outHtml = $outHtml.'new iPhoneStyle($("'.$this->getId().'"), { checkedLabel: "'.$this->onLabel.'", uncheckedLabel: "'.$this->offLabel.'", statusChange: function(e){'.$onClickFunction.'}});';
+			if ($this->getIdDetail()!="") { $outHtml = $outHtml.'});'; }
+		}
+		
+		$outHtml = $outHtml.'</script>';
+		
+    	// Mi trovo all'interno di un dettaglio	
+    	if ($this->getIdDetail()!="") {
+    		$outHtml = $outHtml."</td>";  	
+    	}
+    	
+    	return $outHtml;
+    }
+}
+
+

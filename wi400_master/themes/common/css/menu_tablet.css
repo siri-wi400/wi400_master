@@ -1,0 +1,94 @@
+@CHARSET "ISO-8859-1";
+.detail-label-cell{
+	font-size: 20px;
+}
+
+.detail-message-cell {
+	font-size: 20px;
+}
+
+input[type='text'], input[type='file'], input[type='tel'], select  {
+	font-size: 20px !important;
+}
+
+input[type='checkbox'] {
+	width: 20px;
+	height: 20px;
+	-moz-transform: scale(1.5);
+	-moz-transform-origin: left center;
+}
+
+/*.inputtext {
+	font-size: 20px;
+	zoom: 1.5;
+	-ms-zoom: 1.5;
+	-webkit-zoom: 1.5;
+	/*-moz-transform:  scale(0.5,0.5);
+	-moz-transform-origin: left center;*/
+/*}*/
+
+.detail-header-cell {
+	font-size: 20px;
+}
+
+.detail-button {
+	font-size: 20px;
+}
+
+/*.wi400-grid-row-cell {
+	font-size: 13px;
+}*/
+
+.filter-field {
+	font-size: 14px;
+}
+
+.select-field {
+	font-size: 14px;
+}
+
+.filter-button {
+	font-size: 14px;
+}
+
+.filter-field {
+	font-size: 14px;
+}
+
+.detail-value-cell .wi400-pointer, .wi400-grid-row-cell .wi400-pointer { 
+	width: 25px;
+}
+
+.a.rowDetail {
+	width: 30px;
+}
+
+.wi400-top-menu img {
+	width: 28px !important;
+	height: auto !important;
+}
+
+.wi400-top-menu {
+	right: 0px !important;
+	top: 7px !important;
+}
+
+#pageTitle {
+	right: 237px;
+}
+
+.text {
+	font-size: 15px;
+}
+
+.ui-dialog-titlebar-close {
+	zoom: 1.7;
+	index: 3000;
+}
+.wi400-grid-row-cell {
+ 	font-size: 20px; 
+}
+
+/*.detail-header-cell {
+	font-size: 22px;
+}*/

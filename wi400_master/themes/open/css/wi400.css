@@ -1,0 +1,445 @@
+/*
+Copyright (c) 2008, Siri Informatica All rights reserved.
+*/
+
+.wi400-pointer {
+	cursor:pointer;
+}
+
+
+.loginLeftBox{
+	padding: 0px;
+	margin: 0px;
+	background:#FFFFFF;
+	border-right: 1px solid #99bbe8;
+	vertical-align:middle; 
+	text-align:center;
+}
+
+.loginRightBox{
+	background:#ccd8e7;
+}
+
+.label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #15428b;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+	font-style: normal;
+}
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-style: normal;
+}
+
+.textLight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	font-style: normal;
+}
+.inputtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	padding-left: 2px;
+}
+
+.inputtextDisabled {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #595858;
+	background-color: #e5e5e5;
+	padding-left: 2px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+hr {
+  border:0;
+  width: 95%;
+  background-color: #CCCCCC;
+  height: 1px;
+}
+
+a:link {text-decoration: none; color: #666666;}
+a:visited {text-decoration: none; color: #666666;}
+a:active {text-decoration: none; color: #666666;}
+a:hover {text-decoration: underline; color: #FFCC00;}
+
+
+a.breadCrumbs:link,
+a.breadCrumbs:visited,
+a.breadCrumbs:active{
+	color: #666666;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+a.breadCrumbs:hover{
+	color: #666666;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+
+.body-area {
+	background: #FFFFFF;
+	padding: 10px;
+}
+
+FORM {
+	padding: 0px;
+	margin: 0px;
+}
+
+.select-field{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background:#f8f8f8;
+	color:#5b5a5a;
+	border-left:1px solid #d4d0c8;
+	border-right:1px solid #d4d0c8;
+	border-top:1px solid #d4d0c8;
+	border-bottom:1px double #d4d0c8;
+}
+.select-option-enabled{
+	color:#5b5a5a;
+}
+.select-option-disabled{
+	text-decoration:line-through;
+	color:#CCCCCC;
+}
+
+.wi400-double-list{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background:#f8f8f8;
+	color:#5b5a5a;
+	border-left:1px solid #d4d0c8;
+	border-right:1px solid #d4d0c8;
+	border-top:1px solid #d4d0c8;
+	border-bottom:1px double #d4d0c8;
+	width:220px;
+}
+
+.wi400-double-header{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #5b5a5a;
+}
+	
+	
+.text-label{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight:bold;
+	color:#636363;
+}
+	
+.work-area {
+	background: #FFFFFF;
+	border: 1px solid #99bbe8;
+}
+
+#leftMenuContainer {
+
+	height:99%;
+	background: #FFFFFF;
+}
+
+
+.wi400-top-menu {
+	margin-right:10px;
+	margin-left:10px;
+	height:27px;
+}
+
+.wi400-top-menu-cell {
+	padding-right:5px;
+	padding-left:5px;
+}
+.top-area{
+	background: #ccd8e7;
+	border-bottom: 1px solid #8ea4c1;
+	border-left: 1px solid #e3e9ed;
+	
+}
+
+.left-menu {
+	background: #ffffff;
+	width: 200px;
+	border-top: 1px solid #a9b1ba;
+	border-right: 1px solid #8ea4c1;
+}
+
+.left-menu-content-label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	text-align: left;
+}
+
+.left-menu-content-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	text-align: left;
+}
+
+
+.left-menu-content-input{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background:#FFFFFF;
+	color:#666666;
+	border-left:1px solid #404040;
+	border-top:1px solid #404040;
+	border-bottom:1px double #d4d0c8;
+	border-right:1px double #d4d0c8;
+	padding-left:2px;
+}
+
+.left-menu-logo{
+	background:#FFFFFF;
+	text-align:center;
+}
+
+
+.left-menu-row-content {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.left-menu-row-content-close {
+	height:1px;
+	overflow:hidden;
+}
+
+.left-menu-row-active {
+	background: #7b7b7b;
+	border-top: 1px solid #f0f5fa;
+	border-bottom: 1px solid #8ea4c1;
+}
+
+.left-menu-label-active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-align: left;
+}
+
+.left-menu-slider {
+	cursor:w-resize;
+	background: #ced9e7;
+	border-right: 1px solid #8ea4c1;
+	border-left: 1px solid #e3e9ed;
+	
+	width: 7px;
+}
+
+.left-menu-row {
+	background: #ccd8e7;
+	border-top: 1px solid #f3f7fb;
+	border-bottom: 1px solid #8ea4c1;
+	cursor:n-resize;
+}
+
+.left-menu-label-selected {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #15428b;
+	text-align: left;
+}
+
+/*
+	WI400 DETAIL STYLE
+*/
+
+.detail-image-cell{
+	background:#FFFFFF;
+	padding:15px;
+	border-right:1px solid #CCCCCC;
+}
+.detail-data-cell{
+	background:#FFFFFF;
+	width:100%;
+}
+
+.detail-header {
+	background-image: url("themes/open/images/grid/grid_header.gif");
+	background-repeat: repeat-x;
+	height: 22px;
+}
+
+.detail-header-cell {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-bottom: 1px solid #99bbe8;
+	color: #15428b;
+}
+
+.detail-row {
+	height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#636363;
+}
+
+.detail-label-cell {
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight:bold;
+	background:#dfe8f6;
+	border-right:1px solid #EDEDED;
+	border-top: 1px solid #EDEDED;
+}
+
+.detail-select-cell {
+	background:#f8f8f8;
+	border-top: 1px solid #EDEDED;
+}
+
+.detail-add-cell {
+	white-space: nowrap;
+	background:#f8f8f8;
+	border-right:1px solid #EDEDED;
+	border-top: 1px solid #EDEDED;
+}
+
+.detail-value-cell {
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-top: 1px solid #EDEDED;
+}
+
+.detail-message-cell {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	color:#636363;
+}
+
+.detail-footer {
+	width:100%;
+	height:30px;
+	white-space: nowrap;
+	background: #FFFFFF;
+}
+
+.detail-button {
+	margin:5px;
+	background: #f8f8f8;
+	color: #636363;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+/*
+	OVERWRITE:WI400 TREEMENU STYLE
+*/
+
+.wi400-tree-menu{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+.wi400-grid-header-cell,.wi400-grid-header-first-cell{
+	background-image: url("themes/open/images/grid/grid_header.gif");
+	color: #15428b;
+}
+
+.wi400-grid-filter {
+	background: #d6e3f3;
+	border-right: 1px solid #99bbe8;
+	border-left: 1px solid #99bbe8;
+	border-top: 1px solid #99bbe8;
+}
+
+.wi400-grid-filter-lower {
+	background: #d6e3f3;
+	border-right: 1px solid #99bbe8;
+	border-left: 1px solid #99bbe8;
+	border-bottom: 1px solid #99bbe8;
+}
+
+.wi400-grid-menu {
+	background: #d6e3f3;
+	border-right: 1px solid #99bbe8;
+	border-left: 1px solid #99bbe8;
+	border-bottom: 1px solid #99bbe8;
+}
+
+/*
+	OVERWRITE:WI400 WINDOW STYLE
+*/
+
+/* dialog window */
+table.dialogWindow {
+	border-collapse: collapse;
+	border: 1px solid #8ea4c1;
+}
+
+/* dialog window header */
+.dialogWindow th {
+	background-color: #ccd9e8;
+	padding-left: 5px;
+	border: 0;
+	
+}
+
+/* dialog window header icon */
+.dialogWindow th img {
+	cursor: pointer;
+	margin: 3px 3px 0 0;
+}
+
+/* dialog window body */
+.dialogWindow td {
+	border-collapse: collapse;
+	padding: 4;
+	background-color: #ccd9e8;
+}
+
+/* dialog window iframe */
+.dialogWindow iframe {
+	border: 1px solid #a3bae9;
+	margin:0;
+}		

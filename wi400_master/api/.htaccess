@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^/api/([^\.]+).(xml|json|atom) api.php?url=$1&type=$2

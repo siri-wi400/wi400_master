@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+
+.display {
+	position: relative;
+	font-family: monospace;
+	font-size-adjust: 0.4;
+	/*background: black;
+	color: #00e600;*/
+	width: 700px;
+	height: 500px;
+	zoom: 1;
+	/*-o-transform: scale(1.2);
+	-o-transform-origin: left top;*/
+	-moz-transform: scale(1);
+	-moz-transform-origin: left top;
+	z-index: 1;
+}
+
+.display .component {
+	position: absolute;
+}
+
+.inputtext, .inputtextDisabled {
+	font-family: monospace;/*Courier New;*/
+/* 	font-size: 15px; */
+	/*color: #00e600;*/
+    padding: 0px;
+	padding-bottom: 0px;
+    /*background: transparent;*//*!important;*/
+	outline: none;
+    /*border: transparent;*/
+	/*font-size: 13px;*/
+    /*border-bottom: 1px solid #00e600;*/
+	height: 11px; /*height: 18px;*/
+}
+
+/*.f24 {
+	border-bottom: 1px solid #00e600;
+}
+
+.i24 input {
+	border-bottom: 1px solid #00e600;
+}*/
+
+.BLU {
+	background: blue;
+}

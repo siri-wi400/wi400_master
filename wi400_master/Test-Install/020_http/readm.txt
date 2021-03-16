@@ -1,0 +1,6 @@
+// Test da implementare
+* richiamo url di wi400
+* POST DI DATI con ritorno dati e verifica contenuto
+* Test UTF8
+* TEST INDEX e BATCH
+* Verifica Configurazione httpd.con e fastcgi.conf

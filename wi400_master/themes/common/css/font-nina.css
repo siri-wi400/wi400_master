@@ -1,0 +1,30 @@
+/*
+ *  Font Nina 
+ */
+@font-face {
+   font-family: 'nina-regular';
+   src: url('../themes/common/css/fonts/Nina Regular.ttf'); /* IE9 */
+   src: url('../themes/common/css/fonts/Nina Regular.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../themes/common/css/fonts/Nina Regular.ttf') format('woff2'), /* Browser Super Moderni */
+        url('../themes/common/css/fonts/Nina Regular.ttf') format('woff'), /* Browser Moderni */
+        url('../themes/common/css/fonts/Nina Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../themes/common/css/fonts/Nina Regular.ttf') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+   font-family: 'nina-bold';
+   src: url('../themes/common/css/fonts/Nina Bold.ttf'); /* IE9 */
+   src: url('../themes/common/css/fonts/Nina Bold.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../themes/common/css/fonts/Nina Bold.ttf') format('woff2'), /* Browser Super Moderni */
+        url('../themes/common/css/fonts/Nina Bold.ttf') format('woff'), /* Browser Moderni */
+        url('../themes/common/css/fonts/Nina Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../themes/common/css/fonts/Nina Bold.ttf') format('svg'); /* Legacy iOS */
+}
+
+.font_nina_regular{
+	font-family:"nina-regular";
+}
+
+.font_nina_bold{
+	font-family:"nina-bold";
+}

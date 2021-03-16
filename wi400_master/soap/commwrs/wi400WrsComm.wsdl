@@ -1,0 +1,87 @@
+<?xml version ="1.0" encoding ="UTF-8" ?>
+<definitions name="Wi400"
+	targetNamespace="http://10.0.40.1:89/WI400_LZOVI/soap/commwrs/wi400WrsComm.wsdl"
+	xmlns:tns="http://10.0.40.1:89/WI400_LZOVI/soap/commwrs/wi400WrsComm.wsdl"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://10.0.40.1:89/WI400_LZOVI/soap/commwrs/wi400WrsComm.wsdl">
+			<xsd:complexType name="userspace">
+				<xsd:sequence>
+					<xsd:element name="key" type="xsd:string"></xsd:element>
+					<xsd:element name="value" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	
+	<message name="getRequest">
+		<part name="consumer" type="xsd:string" />
+		<wsdl:part name="contest" type="xsd:string"></wsdl:part>
+		<wsdl:part name="xml" type="xsd:string"></wsdl:part>
+		<wsdl:part name="regole" type="xsd:string"></wsdl:part>
+	</message>
+	<message name="getResponse">
+		<part name="xml" type="xsd:string" />
+	</message>
+	
+	<wsdl:message name="Request">
+		<wsdl:part name="Request" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="Response">
+		<wsdl:part name="Response" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	
+	<portType name="Wi400PortType">
+
+		<operation name="wrsComm">
+			<input message="tns:getRequest" />
+			<output message="tns:getResponse" />
+		</operation>
+		<operation name="wrsPing">
+			<input message="tns:getRequest" />
+			<output message="tns:getResponse" />
+		</operation>
+	</portType>
+
+	<binding name="Wi400Binding" type="tns:Wi400PortType">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<operation name="wrsComm">
+			<soap:operation soapAction="urn:localhost-wi400#wrsComm" />
+			<input>
+				<soap:body use="encoded" namespace="urn:localhost-wi400"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:localhost-wi400"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="wrsPing">
+			<soap:operation soapAction="urn:localhost-wi400#wrsPing" />
+			<input>
+				<soap:body use="encoded" namespace="urn:localhost-wi400"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:localhost-wi400"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+	</binding>
+
+	<service name="Wi400Service">
+		<port name="Wi400Port" binding="tns:Wi400Binding">
+			<soap:address
+				location="http://10.0.40.1:89/WI400_LZOVI/soap/commwrs/wi400WrsComm.php" 
+				/>
+		</port>
+	</service>
+</definitions>

@@ -1,0 +1,70 @@
+<?php
+require_once 'macro.php';
+class test_5250 extends Macro {
+
+	public function generate(){
+		
+		global $moduli_path, $routine_path, $db, $appBase, $settings;
+        
+		$param = $this->getParameters();
+		
+		$detailKey = array();
+		if (isset($param["DETAIL_KEY"])){
+			$detailKey = explode("|", $_GET['DETAIL_KEY']);
+		}
+		
+		// File Keyboard (default)
+		$fileKbd = $moduli_path.'/macro/template/AS400.KMP'; 
+		// File ICO (Default)
+		$fileIco = $moduli_path.'/macro/template/favicon.ico'; 
+		// Creazione WS
+		$file = $moduli_path.'/macro/template/template.ws';
+        $command = file_get_contents($file);
+		//$mark = array('##HOST##','##PATH##');
+		//$command = str_replace($mark, array($_SERVER['SERVER_NAME'], $this->getPath()), $command);
+		$mark = array('##HOST##', "##ID##", '##MACRO##');
+		$idWs = "WI".substr($this->getId(),3,7)."*";
+		$idSessione = "PO5".substr($this->getId(),3,7);		
+		$command = str_replace($mark, array(getServerAddress(), $idWs, $idSessione), $command);
+        // Scrittura file WS temporaneo
+		$fileWs = wi400File::getUserFile("tmp", "open_5250.ws");
+		file_put_contents($fileWs, $command);
+		// Creazione file MACRO
+		$fileName = $moduli_path.'/macro/template/template.mac';
+        $command = file_get_contents($fileName);
+        $macro = "";
+  		// Macro
+		$macro = 'autECLSession.autECLPS.SendKeys "Testo inserito via Macro per parametro 1"
+				   autECLSession.autECLOIA.WaitForInputReady
+				   autECLSession.autECLPS.SendKeys "[tab]"
+				   autECLSession.autECLOIA.WaitForInputReady
+				   autECLSession.autECLPS.SendKeys "Spostamento su secondo campo input"
+				   autECLSession.autECLOIA.WaitForInputReady';      
+		$mark = array('##USER##', '##PASSWORD##', '##ID##', "##SCRIPT##");
+		$command = str_replace($mark, array($_SESSION['user'], getUserPassword(), $this->getId(), $macro), $command);
+		// Scrittura file WS temporaneo
+		$fileMac = wi400File::getUserFile("tmp", "open_5250.mac");
+		file_put_contents($fileMac, $command);
+		// Scrittura record di innesco
+		$field = array("IDOPEN","AZIONE","PGM", "ONLYJBU", "SYSINF","IDFL01","IDFL02","IDFL03","IDFL04","IDFL05","STATO","OKPJBU");
+		$stmtInsert = $db->prepare("INSERT", "ZID5250O", null, $field);
+		$desAzienda ="";
+		$stringa = str_pad("TEST_5250", 20," ", STR_PAD_LEFT).str_pad($_SESSION['user'], 20," ", STR_PAD_LEFT).str_pad(getServerAddress(), 20, " ", STR_PAD_LEFT).
+		     str_pad(date("D:M:Y-h-m"), 20, " ",STR_PAD_LEFT).str_pad($settings['version'], 20, " ",STR_PAD_LEFT).str_pad($_SERVER['SERVER_PORT'], 20, " ",STR_PAD_LEFT);
+		$campi = array($this->getId(), "", "Z5250TR", "S" ,$_SESSION['sysinfname'], "", "", "", "", "", 'V',$stringa);
+		$db->execute($stmtInsert, $campi);
+		// Compressione dei file
+		require_once $routine_path."/classi/wi400InvioEmail.cls.php";
+		$zipName = wi400File::getUserFile("tmp", $this->getId().".zip");
+		wi400InvioEmail::compress(array($fileMac, $fileWs, $fileKbd, $fileIco), $zipName);
+		//parent::generate();
+		unlink($fileWs);
+		unlink($fileMac);
+		
+		return $this->getId().".zip";
+	}
+	
+}	
+
+
+?>

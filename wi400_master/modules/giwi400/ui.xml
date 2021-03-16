@@ -1,0 +1,17 @@
+<VIDEO>
+	<CMDS>
+		<CMD>
+			<FILE>/www/giwi400/session/550363FORM1.xml</FILE>
+		</CMD>
+	</CMDS>
+	<O_GIWI_I></O_GIWI_I>
+	<O_GIWI_FUP></FUNCPRS>
+	
+	<MESSAGES>
+		<!--<MESSAGE>
+			<TEXT>Errore inserimento Data</TEXT>
+			<TYPE>ERROR</TYPE>
+			<FIELD></FIELD>
+		</MESSAGE>-->
+	</MESSAGES>
+</VIDEO>

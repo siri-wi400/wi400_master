@@ -1,0 +1,64 @@
+
+ul.SimpleContextMenu {
+	display: none;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background: #f9f8f7;
+	border: 1px solid #d0d0d0;
+	width: 220px;
+}
+
+ul.SimpleContextMenu li {
+	margin: 0;
+	padding: 0;
+	list-style-position: outside;
+}
+
+
+ul.SimpleContextMenu li span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	display:block;
+	color: #555;
+	padding: 0px;
+	padding-left: 5px;
+	width:220px;
+	overflow:hidden;
+	white-space: nowrap;
+	background-repeat: no-repeat;background-position: 5px 50%;
+	border-top:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;	
+	margin-top:5px;
+	font-weight: bold;
+}
+
+ul.SimpleContextMenu li a:visited,
+ul.SimpleContextMenu li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	display:block;
+	color: #555;
+	padding: 0px;
+	padding-left: 30px;
+	white-space: nowrap;
+	background-repeat: no-repeat;background-position: 5px 50%;
+}
+
+ul.SimpleContextMenu li a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	display:block;
+	font-size: 11px;
+	background-color: #0A246A;
+	color: #fff;
+	text-decoration: none;
+	background-repeat: no-repeat;background-position: 5px 50%;
+}
+
+li.separator {
+	height: 1px;
+	padding: 0px;
+	margin: 0px;
+	border-top:1px solid #cccccc;
+}

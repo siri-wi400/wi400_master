@@ -1,0 +1,10 @@
+.wi400-grid-header-cell-vertical{
+	writing-mode: tb-rl;
+	filter: flipH() flipV();
+	width:20px;
+	font:8pt 'Verdana';
+	/*font-weight: bold;*/
+	display:block;
+	letter-spacing:0px;
+	padding-top:5px;
+}

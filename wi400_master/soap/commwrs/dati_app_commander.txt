@@ -1,0 +1,89 @@
+{
+	"Alberto": {
+		"psw": "a",
+		"funzioni": [
+			{
+				"nome": "prezzi",
+				"descrizione": "",
+				"tipo": "soap",
+				"url": "https://89.96.201.82/WI400/soap/commwrs/wi400WrsComm.php",
+				"icona": "http://www.rifugiodelcinghiale.it/images/migliorprezzo.jpg",
+				"status": "",
+				"refresh": 60000,
+				"timeout": 10000,
+				"enable": 1,
+				"scanner": 1
+			},
+			{
+				"nome": "inventario",
+				"descrizione": "",
+				"tipo": "soap",
+				"url": "https://89.96.201.82/WI400/soap/commwrs/wi400WrsComm.php",
+				"icona": "http://contenidosdigitales.ulp.edu.ar/exe/sistemadeinfo_cont/inventario_1.jpg",
+				"status": "",
+				"refresh": 60000,
+				"timeout": 10000,
+				"enable": 1,
+				"scanner": 1
+			}
+		]
+	},
+	"Luca": {
+		"psw": "b",
+		"funzioni": [
+			{
+				"nome": "prezzi",
+				"descrizione": "",
+				"tipo": "soap",
+				"url": "https://89.96.201.82:3333/WI400/soap/commwrs/wi400WrsComm.php",
+				"icona": "http://www.rifugiodelcinghiale.it/images/migliorprezzo.jpg",
+				"status": "",
+				"refresh": 60000,
+				"timeout": 10000,
+				"enable": 1,
+				"scanner": 1
+			},
+			{
+				"nome": "inventario",
+				"descrizione": "",
+				"tipo": "soap",
+				"url": "https://89.96.201.82:3333/WI400/soap/commwrs/wi400WrsComm.php",
+				"icona": "http://contenidosdigitales.ulp.edu.ar/exe/sistemadeinfo_cont/inventario_1.jpg",
+				"status": "",
+				"refresh": 80000,
+				"timeout": 10000,
+				"enable": 1,
+				"scanner": 1
+			}
+		]
+	},
+	"giovanni": {
+		"psw": "c",
+		"funzioni": [
+			{
+				"nome": "prezzi",
+				"descrizione": "",
+				"tipo": "soap",
+				"url": "https://89.96.201.82/WI400/soap/commwrs/wi400WrsComm.php",
+				"icona": "http://www.rifugiodelcinghiale.it/images/migliorprezzo.jpg",
+				"status": "",
+				"refresh": 60000,
+				"timeout": 10000,
+				"enable": 1,
+				"scanner": 1
+			},
+			{
+				"nome": "inventario",
+				"descrizione": "",
+				"tipo": "soap",
+				"url": "https://89.96.201.82/WI400/soap/commwrs/wi400WrsComm.php",
+				"icona": "http://contenidosdigitales.ulp.edu.ar/exe/sistemadeinfo_cont/inventario_1.jpg",
+				"status": "",
+				"refresh": 90000,
+				"timeout": 10000,
+				"enable": 1,
+				"scanner": 1
+			}
+		]
+	}
+}

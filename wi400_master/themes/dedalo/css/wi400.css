@@ -1,0 +1,589 @@
+/*
+Copyright (c) 2008, Siri Informatica All rights reserved.
+*/
+
+.wi400-pointer {
+	cursor:pointer;
+}
+
+
+.loginLeftBox{
+	padding: 0px;
+	margin: 0px;
+	background:#ffffff;
+
+	vertical-align:middle; 
+	text-align:center;
+}
+
+
+.loginText{
+		color: #25416b;
+}
+
+.label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+	font-style: normal;
+}
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-style: normal;
+}
+
+.textLight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	font-style: normal;
+}
+.inputtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	padding-left: 2px;
+}
+
+.inputtextDisabled {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #595858;
+	background-color: #e5e5e5;
+	padding-left: 2px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	
+}
+ 
+hr {
+  border:0;
+  width: 95%;
+  background-color: #CCCCCC;
+  height: 1px;
+}
+
+a:link {text-decoration: none; color: #17335c;}
+a:visited {text-decoration: none; color: #17335c;}
+a:active {text-decoration: none; color: #17335c;}
+a:hover {text-decoration: underline; color: #FFCC00;}
+
+
+
+a.breadCrumbs:link,
+a.breadCrumbs:visited,
+a.breadCrumbs:active{
+	color: #0c192b;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+a.breadCrumbs:hover{
+	color: #0c192b;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+
+.body-area {
+	background:#ffffff;
+	padding:10px;
+	}
+#sfondo {
+	position: absolute;
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+	}
+
+FORM {
+	padding: 0px;
+	margin: 0px;
+}
+
+.select-field{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background:#f8f8f8;
+	color:#5b5a5a;
+	border-left:1px solid #d4d0c8;
+	border-right:1px solid #d4d0c8;
+	border-top:1px solid #d4d0c8;
+	border-bottom:1px double #d4d0c8;
+}
+.select-option-enabled{
+	color:#5b5a5a;
+}
+.select-option-disabled{
+	text-decoration:line-through;
+	color:#CCCCCC;
+}
+
+.wi400-double-list{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background:#f8f8f8;
+	color:#5b5a5a;
+	border-left:1px solid #d4d0c8;
+	border-right:1px solid #d4d0c8;
+	border-top:1px solid #d4d0c8;
+	border-bottom:1px double #d4d0c8;
+	width:220px;
+}
+
+.wi400-double-header{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #5b5a5a;
+}
+	
+	
+.text-label{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight:bold;
+	color:#636363;
+}
+	
+.work-area {
+	background: #edf0f7;
+	border: 1px solid #CCCCCC;
+}
+
+#leftMenuContainer {
+	height:99%;
+	background: #edf0f7;
+}
+
+
+.wi400-top-menu {
+	margin-right:10px;
+	margin-left:10px;
+	height:27px;
+}
+
+.wi400-top-menu-cell {
+	padding-right:5px;
+	padding-left:5px;
+}
+.top-area{
+	border-bottom: 1px solid #284775;
+	border-left: 1px solid #284775;
+	background: #edf0f7;
+}
+
+.left-menu {
+	background: #ffffff;
+	width: 200px;
+	border-top: 1px solid #262626;
+	border-right: 1px solid #262626;
+}
+
+.left-menu-content-label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #17335c;
+	text-align: left;
+	background:#c0c8dd;
+	font-weight: bold;
+}
+
+.left-menu-content-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #17335c;
+	text-align: left;
+
+}
+
+
+.left-menu-content-input{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background:#5e120d;
+	color:#d1d1d1;
+	border-left:1px solid #404040;
+	border-top:1px solid #404040;
+	border-bottom:1px double #d4d0c8;
+	border-right:1px double #d4d0c8;
+	padding-left:2px;
+}
+
+.left-menu-logo{
+	background:#ffffff;
+	text-align:center;
+}
+
+
+.left-menu-row-content {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.left-menu-row-content-close {
+	height:1px;
+	overflow:hidden;
+}
+
+.left-menu-row-active {
+	background: #7b7b7b;
+	border-top: 1px solid #c5c5c5;
+	border-bottom: 1px solid #262626;
+}
+
+.left-menu-label-active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #f2f0f0;
+	text-align: left;
+}
+
+.left-menu-slider {
+	cursor:w-resize;
+	background: #284775;
+	border-top: 1px solid #404040;
+	width: 7px;
+}
+
+.left-menu-row {
+	background: #284775;
+	border-top: 1px solid #c5c5c5;
+	border-bottom: 1px solid #262626;
+	cursor:n-resize;
+}
+
+.left-menu-label-selected {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+
+/*
+	WI400 DETAIL STYLE
+*/
+
+.detail-image-cell{
+	background:#ffffff;
+	padding:15px;
+	border-right:1px solid #CCCCCC;
+}
+.detail-data-cell{
+	background:#FFFFFF;
+	width:100%;
+}
+
+.detail-header {
+	background-image: url(../images/grid/grid_header.gif);
+	background-repeat: repeat-x;
+	height: 22px;
+}
+
+.detail-header-cell {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-bottom: 1px solid #D0D0D0;
+	color: #5b5a5a;
+}
+
+
+.detail-row {
+	height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#636363;
+}
+
+.detail-label-cell {
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight:bold;
+	background:#f8f8f8;
+	border-right:1px solid #EDEDED;
+	border-top: 1px solid #EDEDED;
+}
+
+
+.detail-select-cell {
+	background:#f8f8f8;
+	border-top: 1px solid #EDEDED;
+}
+
+.detail-add-cell {
+	white-space: nowrap;
+	background:#f8f8f8;
+	border-right:1px solid #EDEDED;
+	border-top: 1px solid #EDEDED;
+}
+
+.detail-value-cell {
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-top: 1px solid #EDEDED;
+}
+
+.detail-message-cell {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	color:#636363;
+}
+
+.detail-footer {
+	width:100%;
+	height:30px;
+	white-space: nowrap;
+	background: #FFFFFF;
+}
+
+.detail-button {
+	margin:5px;
+	background: #f8f8f8;
+	color: #636363;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+/*************************
+STILI PERSONALIZZATI
+*************************/
+
+.personalGridColStyle{
+	background-color: #DE0021;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+/***********************
+MESSAGGI
+**************************/
+.messageLabel_ERROR,
+.messageLabel_ALERT,
+.messageLabel_INFO,
+.messageLabel_SUCCESS {
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.messageLabel_ERROR {
+	color: #de0021;
+}
+
+.messageLabel_ALERT {
+	color: #a09326;
+}
+
+.messageLabel_INFO {
+	color: #577785;
+}
+
+.messageLabel_SUCCESS {
+	color: #5b9935;
+}
+
+.messageArea_ERROR,
+.messageArea_ALERT,
+.messageArea_INFO,
+.messageArea_SUCCESS {
+	text-align: center;
+	overflow-y: visible;
+	cursor: n-resize;
+}
+
+.messageArea_ERROR {
+	border-bottom: 1px solid #DE0021;
+	scrollbar-base-color: #ffebe8;
+	background-color: #ffebe8;
+}
+
+.messageArea_ALERT {
+	border-bottom: 1px solid #a09326;
+	scrollbar-base-color: #faf4c2;
+	background-color: #faf4c2;
+}
+
+.messageArea_INFO {
+	border-bottom: 1px solid #577785;
+	scrollbar-base-color: #dfe7ec;
+	background-color: #dfe7ec;
+}
+
+.messageArea_SUCCESS {
+	border-bottom: 1px solid #5b9935;
+	scrollbar-base-color: #cde5be;
+	background-color: #cde5be;
+}
+
+
+/*
+**  Stili personalizzati liste
+*/
+
+.wi400_grid_red {
+	background-color: #ff9c9c;
+}
+
+.wi400_grid_orange {
+	background-color: #fde5ab;
+}
+
+.wi400_grid_green {
+	background-color: #b4dcb4;
+}
+
+.wi400_grid_yellow {
+	background-color: #FFFF66;
+}
+
+.wi400_grid_blue {
+	background-color: #9999FF;
+}
+/*
+	STILI WI400TABS
+*/
+
+.wi400TabHeader {
+	height:22px;
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.wi400Tab,.wi400TabActive,.wi400TabError,.wi400TabActiveError{
+	white-space: nowrap;
+	padding-left:8px;
+	padding-right:8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.wi400Tab {
+	color: #e0e0e0;
+	background-color: #8d8d8d;
+	cursor: pointer;
+}
+
+.wi400TabActive {
+	color: #222222;
+	background-color: #fadd69;
+	font-weight: bold;
+}
+
+.wi400TabError {
+	color: #e0e0e0;
+	background-color: #a61810;
+	cursor: pointer;
+}
+
+.wi400TabActiveError {
+	color: #f2f1f1;
+	background-color: #e90506;
+	font-weight: bold;
+}
+
+.wi400TabContainer{
+	width:100%;
+	border: 4px solid #fadd69;
+}
+
+.wi400TabContainerError{
+	width:100%;
+	border: 4px solid #e90506;
+}
+
+.wi400TabContent_Hide{
+	display:none;
+}
+
+.wi400TabContent_Show{
+	display:block;
+}
+
+/*
+	STILI MANAGE IMAGE
+	
+*/
+
+.wi400ManageImage {
+	background: #f8f8f8;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	height:27px;
+}
+
+/* 
+	STILI ALBERO
+*/
+
+.treeContainer {
+	width: 100%;
+	white-space: nowrap;
+	padding:5px;
+}
+
+
+/* LINK LISTA */
+a.rowDetail,
+a.rowDetail:visited,
+a.rowDetail:active{
+	color:#636363;
+	text-decoration: underline;
+}
+
+a.rowDetail:hover{
+	color:#006633;
+	text-decoration: underline;
+}
+
+/*
+LIST OVERWRITE
+
+*/
+
+
+#pageTitle{
+	color:#0c192b;
+}
+

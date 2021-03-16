@@ -1,0 +1,61 @@
+# TN5250  keymap
+# f1 = f1 key , F1 = shift F1
+# cf1 = f1 + ctrl  CF1 = shift f1 + ctrl
+#     
+# <pc - key>  <5250 key> 
+f1   PF1
+f2   PF2
+f3   PF3
+f4   PF4
+f5   PF5
+f6   PF6
+f7   PF7
+f8   PF8
+f9   PF9
+f10  PF10
+f11  PF11
+f12  PF12
+F1   PF13
+F2   PF14
+F3   PF15
+F4   PF16
+F5   PF17
+F6   PF18
+F7   PF19
+F8   PF20
+F9   PF21
+F10  PF22
+F11  PF23
+F12  PF24
+cf1  FIELD-
+cf2  FIELD+
+cf3  FIELDEXIT
+cf4  ATTN
+cf5  SYSREQ  
+cf6  INSERT
+cf7  ERASEINPUT
+cf8  DUP
+cf9  -
+cf10 -
+cf11 PF10
+cf12 PF22
+CF1  HELP
+CF2  CLEAR
+CF3  -
+CF4  -
+CF5  -
+CF6  -
+CF7  -
+CF8  -
+CF9  -
+CF10 -
+CF11 -
+CF12 -
+HOME RECORD
+END  FIELDEXIT
+PGUP PGUP
+PGDN PGDN
+ESC  RESET
+RETURN ENTER
+SCROLL FIELD-
+PAUSE  FIELD+

@@ -1,0 +1,57 @@
+@CHARSET "ISO-8859-1";
+
+#altezzaTabella2 .body-area {
+	background: white;
+}
+
+#lookup_content {
+	background: white;
+}
+
+.contDatiIcona {
+	position: relative;
+	width: 250px;
+	height: 50px;
+	padding-top: 20px;
+	padding-left: 10px;
+/* 	margin-right: 10px; */
+    display: inline-block;
+    font-size: 22px;
+	border: 1px solid #888888;
+	cursor: pointer !important;
+    /*background: red;*/
+	box-shadow: 0px 0px 0px 0px white;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.contDatiIcona i {
+	font-size: 34px;
+}
+
+.contDatiIcona:hover {
+	box-shadow: 0px 0px 10px 0px #363636;
+	border: 1px solid white;
+	color: #dd0000;
+	text-shadow: 1px 1px 0px #d9d9d9;
+	/*background: -webkit-linear-gradient(#FFC107, #d78000);
+	background: linear-gradient(#FFC107, #d78000);
+	background: -o-linear-gradient(#FFC107, #d78000);
+	background: -moz-linear-gradient(#FFC107, #d78000);*/
+	
+}
+
+
+.search_prod {
+	background-size: 20px 20px;
+	padding-left: 28px;
+	font-size: 20px;
+	width: 400px;
+	height: 30px;
+	border-radius: 4px;
+	background-color: white !important;
+    background-position: 4px 7px;
+    border: 1px solid gray;
+}

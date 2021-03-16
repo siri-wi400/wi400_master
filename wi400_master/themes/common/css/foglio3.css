@@ -1,0 +1,630 @@
+.add{
+	width:16px;
+	height:16px;
+	background:url(../themes/common/images/pagicone3.png) 0 0;
+	}
+.arrow_curve{
+	width:16px;
+	height:16px;
+	background:url(/themes/common/images/pagicone3.png) -16px 0;
+	}
+.arrow_left{
+	background:url(../themes/common/images/pagicone3.png) 0 -32px;
+	width:16px;
+	height:16px;
+	}
+.arrow_right{
+	background:url(../themes/common/images/pagicone3.png) -16px -32px;
+	width:16px;
+	height:16px;
+	}
+.bin{
+	background:url(../themes/common/images/pagicone3.png) -32px -32px;
+	width:16px;
+	height:16px;
+	}	
+.black_tag{
+	width:16px;
+	height:16px;
+	background:url(../themes/common/images/pagicone3.png) -48px 0;
+	}
+.blue_play{
+	background:url(../themes/common/images/pagicone3.png) -0px -152px;
+	width:64px;
+	height:64px;
+	}	
+.blue_tag{
+	width:16px;
+	height:16px;
+	background:url(../themes/common/images/pagicone3.png) -64px 0;
+	}
+.breadcrumb{
+	background:url(../themes/common/images/pagicone3.png) 0 -216px;
+	width:320px;
+	height:172px;
+	}
+.button_cancel{
+	background:url(../themes/common/images/pagicone3.png) -272px -32px;
+	width:16px;
+	height:16px;
+	}
+.circle_green{
+	background:url(../themes/common/images/pagicone3.png) -144px 0;
+	width:16px;
+	height:16px;
+	}
+.cart_empty{
+	background:url(../themes/common/images/pagicone3.png) -64px -152px;
+	width:64px;
+	height:64px;
+	}
+/*
+.cart_insert{
+	background:url(../themes/common/images/pagicone3.png) -256px -152px;
+	width:64px;
+	height:64px;
+	}
+*/
+.circle_green_tick{
+	background:url(../themes/common/images/pagicone3.png) -192px 0;
+	width:16px;
+	height:16px;
+	}
+.circle_grey{
+	background:url(../themes/common/images/pagicone3.png) -176px 0;
+	width:16px;
+	height:16px;
+	}
+.circle_orange{
+	background:url(../themes/common/images/pagicone3.png) -112px 0;
+	width:16px;
+	height:16px;
+}
+.circle_red{
+	background:url(../themes/common/images/pagicone3.png) -128px 0;
+			width:16px;
+height:16px;
+}
+	
+.circle_yellow{
+	background:url(../themes/common/images/pagicone3.png) -160px 0;
+	width:16px;
+	height:16px;
+}	
+.clean{
+	background: url(../themes/common/images/pagicone3.png) -208px 0;
+	width:16px;
+	height:16px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.construction{
+	background:url(../themes/common/images/pagicone3.png) -400px -48px;
+	width:24px;
+	height:24px;
+}
+.container_red{
+	background:url(../themes/common/images/pagicone3.png) -48px -32px;
+	width:16px;
+	height:16px;
+}
+.container_yellow{
+	background:url(../themes/common/images/pagicone3.png) -64px -32px;
+	width:16px;
+	height:16px;
+}
+.convert{
+	background:url(../themes/common/images/pagicone3.png) -80px -32px;
+	width:16px;
+	height:16px;
+}
+.copy{
+	background:url(../themes/common/images/pagicone3.png) -96px -32px;
+	width:16px;
+	height:16px;
+}
+.copy_row{
+	background:url(../themes/common/images/pagicone3.png) -48px -48px;
+	width:24px;
+	height:24px;
+}
+.debug_active{
+	background:url(../themes/common/images/pagicone3.png) -336px -112px;
+	width:48px;
+	height:48px;
+}
+.debug_not_active{
+	background:url(../themes/common/images/pagicone3.png) -288px -112px;
+	width:48px;
+	height:48px;
+}
+/*.decode_loading{
+background:url(../themes/common/images/pagicone3.png) -352px 0;
+width:34px;
+height:16px;
+}*/
+.detail{
+background:url(../themes/common/images/pagicone3.png) -304px -32px;
+width:16px;
+height:16px;
+}
+.double_arrow{
+background:url(../themes/common/images/pagicone3.png) -112px -32px;
+width:16px;
+height:16px;
+}
+.down{
+background:url(../themes/common/images/pagicone3.png) -448px -32px;
+width:16px;
+height:16px;
+}
+.down_arrow{
+background:url(../themes/common/images/pagicone3.png) -240px 0;
+width:16px;
+height:16px;
+}
+.down_blue{
+background:url(../themes/common/images/pagicone3.png) -128px -32px;
+width:16px;
+height:16px;
+}
+.drive-64{
+background:url(../themes/common/images/pagicone3.png) -128px -152px;
+width:64px;
+height:64px;
+}
+.duplicate{
+background:url(../themes/common/images/pagicone3.png) -144px -32px;
+width:16px;
+height:16px;
+}
+.edit{
+background:url(../themes/common/images/pagicone3.png) -320px -32px;
+width:16px;
+height:16px;
+}
+.empty{
+background:url(../themes/common/images/pagicone3.png) -304px -16px;
+width:16px;
+height:16px;
+}
+/*
+.enter{
+background:url(../themes/common/images/pagicone3.png) -96px -80px;
+width:64px;
+height:32px;
+}
+*/
+.equal{
+background:url(../themes/common/images/pagicone3.png) -112px -16px;
+width:16px;
+height:16px;
+}
+.equal1{
+background:url(../themes/common/images/pagicone3.png) -288px -32px;
+width:16px;
+height:16px;
+}
+.euro{
+background:url(../themes/common/images/pagicone3.png) -224px 0;
+width:16px;
+height:16px;
+}
+.gear{
+background:url(../themes/common/images/pagicone3.png) -144px -104px;
+width:48px;
+height:48px;
+}
+.go-back{
+background:url(../themes/common/images/pagicone3.png) 0 -104px;
+width:48px;
+height:48px;
+}
+.graph{
+background:url(../themes/common/images/pagicone3.png) -160px -32px;
+width:16px;
+height:16px;
+}
+.green_tag{
+background:url(../themes/common/images/pagicone3.png) -96px 0;
+width:16px;
+height:16px;
+}
+.handle4_16{
+background:url(../themes/common/images/pagicone3.png) -176px -32px;
+width:16px;
+height:16px;
+}
+.help{
+background:url(../themes/common/images/pagicone3.png) -416px -32px;
+width:16px;
+height:16px;
+}
+.import{
+background:url(../themes/common/images/pagicone3.png) -256px 0;
+width:16px;
+height:16px;
+}
+.is-greater-than{
+background:url(../themes/common/images/pagicone3.png) -272px 0;
+width:16px;
+height:16px;
+}
+.is-greater-than-or-equal-to{
+background:url(../themes/common/images/pagicone3.png)-304px 0; 
+width:16px;
+height:16px;
+}
+.is-less-than{
+background:url(../themes/common/images/pagicone3.png) -320px 0; 
+width:16px;
+height:16px;
+}
+.is-less-than-or-equal-to{
+background:url(../themes/common/images/pagicone3.png) -288px 0;
+width:16px;
+height:16px;
+}
+.is-not-equal-to{
+background:url(../themes/common/images/pagicone3.png) -336px 0;
+width:16px;
+height:16px;
+}
+.legenda{
+background:url(../themes/common/images/pagicone3.png) -384px -32px;
+width:16px;
+height:16px;
+}
+.loading{
+background:url(../themes/common/images/pagicone3.png) 0 -388px;
+width:340px;
+height:58px;
+}
+/*
+.loading1{
+background:url(../themes/common/images/pagicone3.png) 0 -80px;
+width:32px;
+height:32px;
+}
+*/
+.locked{
+background:url(../themes/common/images/pagicone3.png) -336px -32px;
+width:16px;
+height:16px;
+}
+.mail_light_right{
+background:url(../themes/common/images/pagicone3.png) -192px -32px;
+width:16px;
+height:16px;
+}
+.mapping{
+background:url(../themes/common/images/pagicone3.png) -208px -32px;
+width:16px;
+height:16px;
+}
+.message{
+background:url(../themes/common/images/pagicone3.png) 0 -48px;
+width:24px;
+height:24px;
+}
+.minus{
+background:url(../themes/common/images/pagicone3.png) 0 -16px;
+width:16px;
+height:16px;
+}
+.new_message{
+background:url(../themes/common/images/pagicone3.png) -24px -48px;
+width:24px;
+height:24px;
+}
+.offline{
+background:url(../themes/common/images/pagicone3.png) -340px -216px;
+width:256px;
+height:256px;
+}
+.online{
+background:url(../themes/common/images/pagicone3.png) -192px -152px;
+width:64px;
+height:64px;
+}	
+.opened{
+background:url(../themes/common/images/pagicone3.png) -352px -32px;
+width:16px;
+height:16px;
+}
+/*
+.page_loading{
+background:url(../themes/common/images/pagicone3.png) 0 -446px;
+width:220px;
+height:19px;
+}
+*/
+.palet_16{
+background:url(../themes/common/images/pagicone3.png) -224px -32px;
+width:16px;
+height:16px;
+}
+.palet_16_checked{
+background:url(../themes/common/images/pagicone3.png) -240px -32px;
+width:16px;
+height:16px;
+}	
+.paperclip{
+background:url(../themes/common/images/pagicone3.png) -256px -32px;
+width:16px;
+height:16px;
+}
+.pdf_grey{
+background:url(../themes/common/images/pagicone3.png) -400px -32px;
+width:16px;
+height:16px;
+}
+.pencil{
+background:url(../themes/common/images/pagicone3.png) -80px -16px;
+width:16px;
+height:16px;
+}
+.pencil_32{
+background:url(../themes/common/images/pagicone3.png) -32px -72px;
+width:32px;
+height:32px;
+}
+.pencil_disabled{
+background:url(../themes/common/images/pagicone3.png) -64px -16px;
+width:16px;
+height:16px;
+}
+.phone_add{
+background:url(../themes/common/images/pagicone3.png) -192px -104px;
+width:48px;
+height:48px;
+}
+.phone_remove{
+background:url(../themes/common/images/pagicone3.png) -240px -104px;
+width:48px;
+height:48px;
+}
+.php{
+background:url(../themes/common/images/pagicone3.png) -48px -104px;
+width:48px;
+height:48px;
+}
+
+.play{
+background:url(../themes/common/images/pagicone3.png) -96px -16px;
+width:16px;
+height:16px;
+}
+.plus{
+background:url(../themes/common/images/pagicone3.png) -128px -16px;
+width:16px;
+height:16px;
+}
+.preferiti{
+background:url(../themes/common/images/pagicone3.png) -32px -16px;
+width:16px;
+height:16px;
+}
+.preferiti_off{
+background:url(../themes/common/images/pagicone3.png) -16px -16px;
+width:16px;
+height:16px;
+}
+.preferiti_on{
+background:url(../themes/common/images/pagicone3.png) -48px -16px;
+width:16px;
+height:16px;
+}
+.qwerty{
+background:url(../themes/common/images/pagicone3.png) -432px -32px;
+width:16px;
+height:16px;
+}
+.red_tag{
+width:16px;
+height:16px;
+background:url(../themes/common/images/pagicone3.png) -32px 0;;
+}
+.wi400-pointer.refresh{
+background:url(../themes/common/images/pagicone3.png) -368px -32px;
+width:16px;
+height:16px;
+}
+.relationship{
+background:url(../themes/common/images/pagicone3.png) -144px -16px;
+width:16px;
+height:16px;
+}
+.save{
+background:url(../themes/common/images/pagicone3.png) -160px -16px;
+width:16px;
+height:16px;
+}
+.screenBG{
+background:url(../themes/common/images/pagicone3.png) -176px -16px;
+width:16px;
+height:16px;
+}
+.search_black{
+background:url(../themes/common/images/pagicone3.png) -192px -16px;
+width:16px;
+height:16px;
+}
+.search_white{
+background:url(../themes/common/images/pagicone3.png) -208px -16px;
+width:16px;
+height:16px;
+}
+.sms{
+background:url(../themes/common/images/pagicone3.png) -64px -72px;
+width:32px;
+height:32px;
+}
+.spacer{
+background:url(../themes/common/images/pagicone3.png) -448px -16px;
+width:16px;
+height:16px;
+}
+.sql{
+background:url(../themes/common/images/pagicone3.png) -224px -16px;
+width:16px;
+height:16px;
+}
+.table-select-row{
+background:url(../themes/common/images/pagicone3.png) -240px -16px;
+width:16px;
+height:16px;
+}
+.tablet{
+background:url(../themes/common/images/pagicone3.png) -96px -112px;
+width:48px;
+height:48px;
+}
+.tabulatop{
+background:url(../themes/common/images/pagicone3.png) -386px 0;
+width:27px;
+height:16px;
+}
+.tabulatop_{
+background:url(../themes/common/images/pagicone3.png) -413px 0;
+width:27px;
+height:16px;
+}
+.wi400-pointer.text{
+background:url(../themes/common/images/pagicone3.png) -256px -16px;
+width:16px;
+height:16px;
+}
+.transito_in{
+background:url(../themes/common/images/pagicone3.png) -368px -16px;
+width:32px;
+height:16px;
+}
+.transito_out{
+background:url(../themes/common/images/pagicone3.png) -400px -16px;
+width:32px;
+height:16px;
+}
+.tree{
+background:url(../themes/common/images/pagicone3.png) -352px -16px;
+width:16px;
+height:16px;
+}
+.triangle_up_down{
+background:url(../themes/common/images/pagicone3.png) -72px -48px;
+width:24px;
+height:24px;
+}
+/*
+.ui-anim_basic_16x16{
+background:url(../themes/common/images/pagicone3.png) -336px -16px;
+width:16px;
+height:16px;
+}
+*/
+.up{
+background:url(../themes/common/images/pagicone3.png) -464px -32px;
+width:16px;
+height:16px;
+}
+.up_arrow{
+background:url(../themes/common/images/pagicone3.png) -320px -16px;
+width:16px;
+height:16px;
+}
+.view_tree{
+background:url(../themes/common/images/pagicone3.png) -320px -152px;
+width:64px;
+height:64px;
+}
+.yellow_tag{
+background:url(../themes/common/images/pagicone3.png) -80px 0;
+width:16px;
+height:16px;
+}
+.zoom{
+background:url(../themes/common/images/pagicone3.png) -288px -16px;
+width:16px;
+height:16px;
+}
+.zoom_rosso{
+background:url(../themes/common/images/pagicone3.png) -272px -16px;
+width:16px;
+height:16px;
+}
+
+
+
+.decode_loading2 {
+  width: 30px;
+  height: 14px;
+  background: url(../themes/common/images/pagicone3.png) 0 -560px;
+ animation: pinco 3s steps(15) infinite;
+}
+
+@keyframes pinco {
+    from{ background-position: 0 -560px;}
+	to { background-position: -420px -560px;}
+}
+
+
+.busy {
+  width: 60px;
+  height: 50px;
+  background: url(../themes/common/images/pagicone3.png)-720px -574px; 
+ animation: pinco2 8s steps(12) 1 forwards;
+/*animation-direction:reverse;*/
+/*animation-fill-mode: forwards;*/
+/*animation-fill-mode: both;*/
+}
+
+@keyframes "pinco2" {
+	0%{ background-position: 0 -574px; background:none;}
+	25%{ background-position: 0 -574px;}
+	50%{ background-position: 0 -574px;}
+    100%{ background-position: -720px -574px;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

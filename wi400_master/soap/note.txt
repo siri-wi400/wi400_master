@@ -1,0 +1,1 @@
+Controllare sempre l'indirizzo del WSDL quando si copia la cartella

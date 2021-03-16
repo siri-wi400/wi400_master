@@ -1,0 +1,3 @@
+<?php
+	$pageDefaultDecoration = "login_";
+?>

@@ -1,0 +1,4 @@
+order allow,deny
+<FilesMatch ".(php|wsdl|html)$">
+    allow from all
+</FilesMatch>
