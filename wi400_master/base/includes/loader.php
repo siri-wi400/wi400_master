@@ -118,7 +118,7 @@
 //	require_once $routine_path."/generali/common.php";
 	
 	
-	//require_once $routine_path."/PHPMailer/class.phpmailer.php";
+	require_once $routine_path."/PHPMailer/class.phpmailer.php";
 	require_once $base_path."/includes/errorHandler.php";
 	
 	//require_once $routine_path.'/classi/wi400Decoding.cls.php';
